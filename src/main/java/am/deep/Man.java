@@ -5,12 +5,15 @@ import java.util.List;
 class Man {
     private String name;
     private int age;
-    private List<String> favoriteBooks;
+    private List<Book> favoriteBooks;
 
-    public Man(String name, int age, List<String> favoriteBooks) {
+    public Man(String name, int age, List<Book> favoriteBooks) {
         this.name = name;
         this.age = age;
         this.favoriteBooks = favoriteBooks;
+    }
+
+    public Man() {
     }
 
     public String getName() {
@@ -21,20 +24,7 @@ class Man {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public List<String> getFavoriteBooks() {
+    public List<Book> getFavoriteBooks() {
         return favoriteBooks;
     }
-
-    public void setFavoriteBooks(List<String> favoriteBooks) {
-        this.favoriteBooks = favoriteBooks;
-    }
-
 }
